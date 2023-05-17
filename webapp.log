@@ -1,1 +1,7 @@
 2023/05/16 21:25:24 main.go:15: test
+2023/05/16 23:19:05 users.go:33: near "value": syntax error
+2023/05/16 23:20:27 users.go:33: near "value": syntax error
+2023/05/18 00:50:26 todos.go:70: no such column: content
+2023/05/18 00:50:49 todos.go:70: no such column: content
+2023/05/18 00:52:49 todos.go:70: no such column: content
+2023/05/18 00:54:34 todos.go:70: no such column: content
