@@ -12,7 +12,7 @@ type Todo struct {
 	CreatedAt time.Time
 }
 
-func (u *User) CreatedTodo(content string) (err error) {
+func (u *User) CreateTodo(content string) (err error) {
 	cmd := `insert into todos (
 		content, 
 		user_id, 

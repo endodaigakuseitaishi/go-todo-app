@@ -5,3 +5,2500 @@
 2023/05/18 00:50:49 todos.go:70: no such column: content
 2023/05/18 00:52:49 todos.go:70: no such column: content
 2023/05/18 00:54:34 todos.go:70: no such column: content
+2023/05/18 01:44:32 server.go:3217: http: panic serving [::1]:51122: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000115970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc0000c6000?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc0000c6000?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142180?, {0x100587a10?, 0xc0000c6000?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc0000c6000}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009c030?}, {0x100587a10, 0xc0000c6000}, 0xc0000a6000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e090, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:32 server.go:3217: http: panic serving [::1]:51123: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000063970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc0000c61c0?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc0000c61c0?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142200?, {0x100587a10?, 0xc0000c61c0?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc0000c61c0}, 0xc000144100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f410?}, {0x100587a10, 0xc0000c61c0}, 0xc000144100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e120, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:32 server.go:3217: http: panic serving [::1]:51124: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000064970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc00015a000?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc00015a000?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142300?, {0x100587a10?, 0xc00015a000?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc00015a000}, 0xc000144200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f500?}, {0x100587a10, 0xc00015a000}, 0xc000144200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e1b0, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:33 server.go:3217: http: panic serving [::1]:51125: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000064970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc00015a1c0?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc00015a1c0?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142380?, {0x100587a10?, 0xc00015a1c0?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc00015a1c0}, 0xc000144300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f6b0?}, {0x100587a10, 0xc00015a1c0}, 0xc000144300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e360, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:51 server.go:3217: http: panic serving [::1]:51126: runtime error: invalid memory address or nil pointer dereference
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000065970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc0000c6380?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc0000c6380?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142400?, {0x100587a10?, 0xc0000c6380?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc0000c6380}, 0xc000144600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f920?}, {0x100587a10, 0xc0000c6380}, 0xc000144600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e510, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:51 server.go:3217: http: panic serving [::1]:51127: runtime error: invalid memory address or nil pointer dereference
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000064970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc0000c6540?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc0000c6540?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142480?, {0x100587a10?, 0xc0000c6540?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc0000c6540}, 0xc000144500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f8c0?}, {0x100587a10, 0xc0000c6540}, 0xc000144500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e5a0, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:51 server.go:3217: http: panic serving [::1]:51128: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000064970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc0000c6700?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc0000c6700?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000222000?, {0x100587a10?, 0xc0000c6700?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc0000c6700}, 0xc0000a6100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009c540?}, {0x100587a10, 0xc0000c6700}, 0xc0000a6100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000228000, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:52 server.go:3217: http: panic serving [::1]:51129: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc00023a970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc0000c68c0?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc0000c68c0?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000222080?, {0x100587a10?, 0xc0000c68c0?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc0000c68c0}, 0xc000244000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002240f0?}, {0x100587a10, 0xc0000c68c0}, 0xc000244000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000228090, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:52 server.go:3217: http: panic serving [::1]:51130: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000237970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc00015a380?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc00015a380?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142500?, {0x100587a10?, 0xc00015a380?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc00015a380}, 0xc000144800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007fad0?}, {0x100587a10, 0xc00015a380}, 0xc000144800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e630, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:53 server.go:3217: http: panic serving [::1]:51131: runtime error: invalid memory address or nil pointer dereference
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000236970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc00025c000?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc00025c000?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142580?, {0x100587a10?, 0xc00025c000?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc00025c000}, 0xc000144700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007fa70?}, {0x100587a10, 0xc00025c000}, 0xc000144700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e6c0, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/18 01:44:53 server.go:3217: http: panic serving [::1]:51132: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.errRecover(0xc000237970)
+	/usr/local/go/src/text/template/exec.go:170 +0x165
+panic({0x1004a4780, 0x1007af160})
+	/usr/local/go/src/runtime/panic.go:884 +0x213
+text/template.(*Template).execute(0x0, {0x100585620?, 0xc00025c1c0?}, {0x0?, 0x0?})
+	/usr/local/go/src/text/template/exec.go:221 +0x22c
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:207
+go-todo-app/app/controllers.top({0x100587a10?, 0xc00025c1c0?}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:10 +0x89
+net/http.HandlerFunc.ServeHTTP(0xc000142700?, {0x100587a10?, 0xc00025c1c0?}, 0x10000eb88?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100587a10, 0xc00025c1c0}, 0xc000144b00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007fce0?}, {0x100587a10, 0xc00025c1c0}, 0xc000144b00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00014e870, {0x100587c08, 0xc00007f2c0})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/20 01:59:46 main.go:22: sql: expected 5 destination arguments in Scan, not 4
+2023/05/21 02:14:28 server.go:3217: http: panic serving [::1]:58708: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000115b70?, 0x1002f7985?}, 0xc000128100)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0000c0000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000120180?, {0x10059ad30?, 0xc0000c0000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0000}, 0xc000128100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f410?}, {0x10059ad30, 0xc0000c0000}, 0xc000128100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000138090, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:14:28 server.go:3217: http: panic serving [::1]:58709: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000064b70?, 0x1002f7985?}, 0xc000128200)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0000c01c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000120200?, {0x10059ad30?, 0xc0000c01c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c01c0}, 0xc000128200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f500?}, {0x10059ad30, 0xc0000c01c0}, 0xc000128200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000138120, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:14:28 server.go:3217: http: panic serving [::1]:58710: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000064b70?, 0x1002f7985?}, 0xc00009e200)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc00015c000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec100?, {0x10059ad30?, 0xc00015c000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00015c000}, 0xc00009e200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0210?}, {0x10059ad30, 0xc00015c000}, 0xc00009e200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c240, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:14:29 server.go:3217: http: panic serving [::1]:58711: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000063b70?, 0x1002f7985?}, 0xc00009e300)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0000c0380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec180?, {0x10059ad30?, 0xc0000c0380?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0380}, 0xc00009e300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a02d0?}, {0x10059ad30, 0xc0000c0380}, 0xc00009e300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c2d0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:14:34 server.go:3217: http: panic serving [::1]:58712: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc00005eb70?, 0x1002f7985?}, 0xc00009e600)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0002a0000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec200?, {0x10059ad30?, 0xc0002a0000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0000}, 0xc00009e600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a04e0?}, {0x10059ad30, 0xc0002a0000}, 0xc00009e600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c480, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:14:34 server.go:3217: http: panic serving [::1]:58713: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000063b70?, 0x1002f7985?}, 0xc00009e500)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0002a01c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec280?, {0x10059ad30?, 0xc0002a01c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a01c0}, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0480?}, {0x10059ad30, 0xc0002a01c0}, 0xc00009e500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c510, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:14:34 server.go:3217: http: panic serving [::1]:58715: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc00005fb70?, 0x1002f7985?}, 0xc00009e700)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0000c0540}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec300?, {0x10059ad30?, 0xc0000c0540?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0540}, 0xc00009e700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a05d0?}, {0x10059ad30, 0xc0000c0540}, 0xc00009e700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c5a0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:05 server.go:3217: http: panic serving [::1]:58717: runtime error: invalid memory address or nil pointer dereference
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000214b70?, 0x1002f7985?}, 0xc00021c000)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0000c0700}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000206000?, {0x10059ad30?, 0xc0000c0700?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0700}, 0xc00021c000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000208090?}, {0x10059ad30, 0xc0000c0700}, 0xc00021c000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00020c000, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:15 server.go:3217: http: panic serving [::1]:58718: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000215b70?, 0x1002f7985?}, 0xc00021c100)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0002a0380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000206080?, {0x10059ad30?, 0xc0002a0380?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0380}, 0xc00021c100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000208180?}, {0x10059ad30, 0xc0002a0380}, 0xc00021c100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00020c090, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:15 server.go:3217: http: panic serving [::1]:58720: runtime error: invalid memory address or nil pointer dereference
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000214b70?, 0x1002f7985?}, 0xc00009ea00)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc000238000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec480?, {0x10059ad30?, 0xc000238000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000238000}, 0xc00009ea00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0810?}, {0x10059ad30, 0xc000238000}, 0xc00009ea00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009c870, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:15 server.go:3217: http: panic serving [::1]:58721: runtime error: invalid memory address or nil pointer dereference
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000214b70?, 0x1002f7985?}, 0xc00021c200)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0000c08c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000206100?, {0x10059ad30?, 0xc0000c08c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c08c0}, 0xc00021c200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000208300?}, {0x10059ad30, 0xc0000c08c0}, 0xc00021c200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00020c240, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:16 server.go:3217: http: panic serving [::1]:58722: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000215b70?, 0x1002f7985?}, 0xc000284200)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.login({0x10059ad30, 0xc0002a0540}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_auth.go:39 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0002d4180?, {0x10059ad30?, 0xc0002a0540?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0540}, 0xc000284200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002862d0?}, {0x10059ad30, 0xc0002a0540}, 0xc000284200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000282360, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:20 server.go:3217: http: panic serving [::1]:58723: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000216b70?, 0x1002f7985?}, 0xc00021c300)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002a0700}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0002d4200?, {0x10059ad30?, 0xc0002a0700?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0700}, 0xc00021c300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000208360?}, {0x10059ad30, 0xc0002a0700}, 0xc00021c300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000282510, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:20 server.go:3217: http: panic serving [::1]:58724: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000215b70?, 0x1002f7985?}, 0xc000284300)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002a08c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0002d4280?, {0x10059ad30?, 0xc0002a08c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a08c0}, 0xc000284300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000286480?}, {0x10059ad30, 0xc0002a08c0}, 0xc000284300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002825a0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:20 server.go:3217: http: panic serving [::1]:58726: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000214b70?, 0x1002f7985?}, 0xc00009eb00)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002a0a80}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec500?, {0x10059ad30?, 0xc0002a0a80?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0a80}, 0xc00009eb00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0960?}, {0x10059ad30, 0xc0002a0a80}, 0xc00009eb00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009ca20, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:20 server.go:3217: http: panic serving [::1]:58727: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc00005fb70?, 0x1002f7985?}, 0xc00009ec00)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0000c0a80}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0002d4300?, {0x10059ad30?, 0xc0000c0a80?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0a80}, 0xc00009ec00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a09c0?}, {0x10059ad30, 0xc0000c0a80}, 0xc00009ec00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000282990, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:21 server.go:3217: http: panic serving [::1]:58728: runtime error: invalid memory address or nil pointer dereference
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000060b70?, 0x1002f7985?}, 0xc00009ee00)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002381c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec580?, {0x10059ad30?, 0xc0002381c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002381c0}, 0xc00009ee00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0bd0?}, {0x10059ad30, 0xc0002381c0}, 0xc00009ee00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009cbd0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:21 server.go:3217: http: panic serving [::1]:58729: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc00005fb70?, 0x1002f7985?}, 0xc00009ed00)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002a0c40}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec600?, {0x10059ad30?, 0xc0002a0c40?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0c40}, 0xc00009ed00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0b70?}, {0x10059ad30, 0xc0002a0c40}, 0xc00009ed00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009cc60, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:21 server.go:3217: http: panic serving [::1]:58730: runtime error: invalid memory address or nil pointer dereference
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000061b70?, 0x1002f7985?}, 0xc00009ef00)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0000c0c40}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec680?, {0x10059ad30?, 0xc0000c0c40?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0c40}, 0xc00009ef00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0c90?}, {0x10059ad30, 0xc0000c0c40}, 0xc00009ef00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009ccf0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:26 server.go:3217: http: panic serving [::1]:58732: runtime error: invalid memory address or nil pointer dereference
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000060b70?, 0x1002f7985?}, 0xc00021c500)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc000238380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000206180?, {0x10059ad30?, 0xc000238380?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000238380}, 0xc00021c500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002084b0?}, {0x10059ad30, 0xc000238380}, 0xc00021c500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00020c3f0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:28 server.go:3217: http: panic serving [::1]:58733: runtime error: invalid memory address or nil pointer dereference
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000060b70?, 0x1002f7985?}, 0xc00021c700)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0000c0e00}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000206200?, {0x10059ad30?, 0xc0000c0e00?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0e00}, 0xc00021c700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000208600?}, {0x10059ad30, 0xc0000c0e00}, 0xc00021c700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00020c5a0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:28 server.go:3217: http: panic serving [::1]:58735: runtime error: invalid memory address or nil pointer dereference
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000217b70?, 0x1002f7985?}, 0xc00021c800)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0000c0fc0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000206280?, {0x10059ad30?, 0xc0000c0fc0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c0fc0}, 0xc00021c800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002086c0?}, {0x10059ad30, 0xc0000c0fc0}, 0xc00021c800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00020c630, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:28 server.go:3217: http: panic serving [::1]:58736: runtime error: invalid memory address or nil pointer dereference
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000210b70?, 0x1002f7985?}, 0xc00021c900)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0000c1180}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000206300?, {0x10059ad30?, 0xc0000c1180?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c1180}, 0xc00021c900)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000208780?}, {0x10059ad30, 0xc0000c1180}, 0xc00021c900)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00020c6c0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:15:39 server.go:3217: http: panic serving [::1]:58740: runtime error: invalid memory address or nil pointer dereference
+goroutine 71 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000210b70?, 0x1002f7985?}, 0xc00009f400)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0000c1340}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec700?, {0x10059ad30?, 0xc0000c1340?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c1340}, 0xc00009f400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a0f90?}, {0x10059ad30, 0xc0000c1340}, 0xc00009f400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009d200, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:16:09 server.go:3217: http: panic serving [::1]:58741: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000065b70?, 0x1002f7985?}, 0xc000128500)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0000c1500}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000120400?, {0x10059ad30?, 0xc0000c1500?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000c1500}, 0xc000128500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f7a0?}, {0x10059ad30, 0xc0000c1500}, 0xc000128500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001382d0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:16:09 server.go:3217: http: panic serving [::1]:58742: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000064b70?, 0x1002f7985?}, 0xc000128400)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002a0e00}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000120480?, {0x10059ad30?, 0xc0002a0e00?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0e00}, 0xc000128400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f740?}, {0x10059ad30, 0xc0002a0e00}, 0xc000128400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000138360, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:16:09 server.go:3217: http: panic serving [::1]:58747: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000176b70?, 0x1002f7985?}, 0xc000128600)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002a0fc0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000120500?, {0x10059ad30?, 0xc0002a0fc0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a0fc0}, 0xc000128600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f860?}, {0x10059ad30, 0xc0002a0fc0}, 0xc000128600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001383f0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:17:09 server.go:3217: http: panic serving [::1]:58751: runtime error: invalid memory address or nil pointer dereference
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000065b70?, 0x1002f7985?}, 0xc00009f700)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc0002a1180}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ec780?, {0x10059ad30?, 0xc0002a1180?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002a1180}, 0xc00009f700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a1170?}, {0x10059ad30, 0xc0002a1180}, 0xc00009f700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009d4d0, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:18:30 server.go:3217: http: panic serving [::1]:58776: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3ea0, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc000123b70?, 0x1002f7925?}, 0xc000130100)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:24 +0x85
+go-todo-app/app/controllers.top({0x10059ad30, 0xc000166000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc000128180?, {0x10059ad30?, 0xc000166000?}, 0x10000edc8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000166000}, 0xc000130100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f410?}, {0x10059ad30, 0xc000166000}, 0xc000130100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000140090, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:19:23 server.go:3217: http: panic serving [::1]:58801: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004b3e80, 0x1007cb180})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+go-todo-app/app/controllers.session({0xc0000c3b70?, 0x1002f7905?}, 0xc000182000)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:25 +0xd2
+go-todo-app/app/controllers.top({0x10059ad30, 0xc000192000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:11 +0x32
+net/http.HandlerFunc.ServeHTTP(0xc0000ce180?, {0x10059ad30?, 0xc000192000?}, 0x10000eda8?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000192000}, 0xc000182000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e030?}, {0x10059ad30, 0xc000192000}, 0xc000182000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea090, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:23 server.go:3217: http: panic serving [::1]:58850: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000257b30})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000205c00}, {0x0, 0x0}, {0xc00028ba18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000205c00}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce180?, {0x10059ad30?, 0xc000205c00?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000205c00}, 0xc00025e200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3410?}, {0x10059ad30, 0xc000205c00}, 0xc00025e200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea090, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:23 server.go:3217: http: panic serving [::1]:58908: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0002b91d0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00011bc00}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00011bc00}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000183a00?, {0x10059ad30?, 0xc00011bc00?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00011bc00}, 0xc0001abc00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002b82d0?}, {0x10059ad30, 0xc00011bc00}, 0xc0001abc00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000188c60, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:23 server.go:3217: http: panic serving [::1]:58931: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000316360})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000330000}, {0x0, 0x0}, {0xc000341a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000330000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000183d00?, {0x10059ad30?, 0xc000330000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000330000}, 0xc0002c4100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002b9290?}, {0x10059ad30, 0xc000330000}, 0xc0002c4100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000188f30, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:24 server.go:3217: http: panic serving [::1]:58932: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc00027c000})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000205dc0}, {0x0, 0x0}, {0xc00033da18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000205dc0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00021ae00?, {0x10059ad30?, 0xc000205dc0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000205dc0}, 0xc00025e300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000257c50?}, {0x10059ad30, 0xc000205dc0}, 0xc00025e300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202ea0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:29 server.go:3217: http: panic serving [::1]:58933: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 99 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0002b9620})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0001bfce0}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0001bfce0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00034a100?, {0x10059ad30?, 0xc0001bfce0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0001bfce0}, 0xc000370000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000316420?}, {0x10059ad30, 0xc0001bfce0}, 0xc000370000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000312120, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:29 server.go:3217: http: panic serving [::1]:58935: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 100 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc00027c390})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00027e000}, {0x0, 0x0}, {0xc00033da18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00027e000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00034a180?, {0x10059ad30?, 0xc00027e000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00027e000}, 0xc000370100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003164e0?}, {0x10059ad30, 0xc00027e000}, 0xc000370100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0003121b0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:29 server.go:3217: http: panic serving [::1]:58936: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 101 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000316930})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0003301c0}, {0x0, 0x0}, {0xc000341a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0003301c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00034a200?, {0x10059ad30?, 0xc0003301c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0003301c0}, 0xc000370200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003165a0?}, {0x10059ad30, 0xc0003301c0}, 0xc000370200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000312240, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:57 server.go:3217: http: panic serving [::1]:58950: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0000a3800})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000118000}, {0x0, 0x0}, {0xc0000c9a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000118000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce180?, {0x10059ad30?, 0xc000118000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000118000}, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3410?}, {0x10059ad30, 0xc000118000}, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea090, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:58 server.go:3217: http: panic serving [::1]:58951: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000206360})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000220000}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000220000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e000?, {0x10059ad30?, 0xc000220000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000220000}, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180090?}, {0x10059ad30, 0xc000220000}, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182000, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:58 server.go:3217: http: panic serving [::1]:58952: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000180450})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00018e000}, {0x0, 0x0}, {0xc000199a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00018e000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce380?, {0x10059ad30?, 0xc00018e000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00018e000}, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a38c0?}, {0x10059ad30, 0xc00018e000}, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea240, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:58 server.go:3217: http: panic serving [::1]:58953: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0000a3d40})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0001182a0}, {0x0, 0x0}, {0xc0000c9a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0001182a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce400?, {0x10059ad30?, 0xc0001182a0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0001182a0}, 0xc0000da300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3980?}, {0x10059ad30, 0xc0001182a0}, 0xc0000da300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea2d0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:27:58 server.go:3217: http: panic serving [::1]:58954: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc00015e210})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000118460}, {0x0, 0x0}, {0xc0000c9a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000118460}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce580?, {0x10059ad30?, 0xc000118460?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000118460}, 0xc000260000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002063c0?}, {0x10059ad30, 0xc000118460}, 0xc000260000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea480, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:03 server.go:3217: http: panic serving [::1]:58955: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000180960})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00018e2a0}, {0x0, 0x0}, {0xc000199a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00018e2a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce600?, {0x10059ad30?, 0xc00018e2a0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00018e2a0}, 0xc000186100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3e60?}, {0x10059ad30, 0xc00018e2a0}, 0xc000186100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea510, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:03 server.go:3217: http: panic serving [::1]:58956: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000180d50})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00018e460}, {0x0, 0x0}, {0xc000199a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00018e460}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce780?, {0x10059ad30?, 0xc00018e460?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00018e460}, 0xc0000da500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00015e2d0?}, {0x10059ad30, 0xc00018e460}, 0xc0000da500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea6c0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:03 server.go:3217: http: panic serving [::1]:58957: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc00015e630})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000118620}, {0x0, 0x0}, {0xc000199a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000118620}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e600?, {0x10059ad30?, 0xc000118620?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000118620}, 0xc0000da600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180e10?}, {0x10059ad30, 0xc000118620}, 0xc0000da600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182510, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:03 server.go:3217: http: panic serving [::1]:58958: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000206750})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002201c0}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002201c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e700?, {0x10059ad30?, 0xc0002201c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002201c0}, 0xc000186300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181050?}, {0x10059ad30, 0xc0002201c0}, 0xc000186300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182750, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:03 server.go:3217: http: panic serving [::1]:58959: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000206b10})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000220380}, {0x0, 0x0}, {0xc0000c5a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000220380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce900?, {0x10059ad30?, 0xc000220380?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000220380}, 0xc0000da700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00015e6f0?}, {0x10059ad30, 0xc000220380}, 0xc0000da700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea7e0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:04 server.go:3217: http: panic serving [::1]:58960: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000181560})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00018e700}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00018e700}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e780?, {0x10059ad30?, 0xc00018e700?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00018e700}, 0xc000186400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181110?}, {0x10059ad30, 0xc00018e700}, 0xc000186400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001827e0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:07 server.go:3217: http: panic serving [::1]:58961: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000206e70})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000220540}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000220540}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e800?, {0x10059ad30?, 0xc000220540?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000220540}, 0xc000260100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001811d0?}, {0x10059ad30, 0xc000220540}, 0xc000260100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182870, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:07 server.go:3217: http: panic serving [::1]:58962: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000207200})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000220700}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000220700}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007ea00?, {0x10059ad30?, 0xc000220700?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000220700}, 0xc000186700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001817a0?}, {0x10059ad30, 0xc000220700}, 0xc000186700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182bd0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:07 server.go:3217: http: panic serving [::1]:58963: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000207740})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002208c0}, {0x0, 0x0}, {0xc00019ba18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002208c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00023a680?, {0x10059ad30?, 0xc0002208c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002208c0}, 0xc000260400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000207320?}, {0x10059ad30, 0xc0002208c0}, 0xc000260400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202510, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:07 server.go:3217: http: panic serving [::1]:58964: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000207ad0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000220a80}, {0x0, 0x0}, {0xc00019ba18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000220a80}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00023a700?, {0x10059ad30?, 0xc000220a80?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000220a80}, 0xc000260300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002073e0?}, {0x10059ad30, 0xc000220a80}, 0xc000260300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002025a0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:07 server.go:3217: http: panic serving [::1]:58965: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0002943c0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002b4000}, {0x0, 0x0}, {0xc0000c5a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002b4000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007eb00?, {0x10059ad30?, 0xc0002b4000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002b4000}, 0xc000186800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001819e0?}, {0x10059ad30, 0xc0002b4000}, 0xc000186800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182e10, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:08 server.go:3217: http: panic serving [::1]:58966: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000294780})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002b41c0}, {0x0, 0x0}, {0xc0000c5a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002b41c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00023a980?, {0x10059ad30?, 0xc0002b41c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002b41c0}, 0xc000260500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000207b90?}, {0x10059ad30, 0xc0002b41c0}, 0xc000260500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002027e0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:13 server.go:3217: http: panic serving [::1]:58967: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000181d70})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00018ea80}, {0x0, 0x0}, {0xc000195a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00018ea80}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00023aa00?, {0x10059ad30?, 0xc00018ea80?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00018ea80}, 0xc000260600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000207c50?}, {0x10059ad30, 0xc00018ea80}, 0xc000260600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000202870, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:13 server.go:3217: http: panic serving [::1]:58969: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000294b10})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002b4380}, {0x0, 0x0}, {0xc0000c5a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:17 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002b4380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007ec80?, {0x10059ad30?, 0xc0002b4380?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002b4380}, 0xc000186b00)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181ef0?}, {0x10059ad30, 0xc0002b4380}, 0xc000186b00)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182fc0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:57 server.go:3217: http: panic serving [::1]:58986: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0000a3950})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0001181c0}, {0x0, 0x0}, {0xc0000c9a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0001181c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce180?, {0x10059ad30?, 0xc0001181c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0001181c0}, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3410?}, {0x10059ad30, 0xc0001181c0}, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea090, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:57 server.go:3217: http: panic serving [::1]:58987: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000180450})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00018e000}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00018e000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e000?, {0x10059ad30?, 0xc00018e000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00018e000}, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180090?}, {0x10059ad30, 0xc00018e000}, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182000, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:57 server.go:3217: http: panic serving [::1]:58988: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000204450})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000240000}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000240000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000202000?, {0x10059ad30?, 0xc000240000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000240000}, 0xc00022a100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204090?}, {0x10059ad30, 0xc000240000}, 0xc00022a100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000208000, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:57 server.go:3217: http: panic serving [::1]:58989: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000204810})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002401c0}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002401c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e180?, {0x10059ad30?, 0xc0002401c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002401c0}, 0xc000186100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180510?}, {0x10059ad30, 0xc0002401c0}, 0xc000186100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001821b0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:57 server.go:3217: http: panic serving [::1]:58990: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000204ba0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000240380}, {0x0, 0x0}, {0xc000305a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000240380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc0000ce480?, {0x10059ad30?, 0xc000240380?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000240380}, 0xc0000da300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a3a10?}, {0x10059ad30, 0xc000240380}, 0xc0000da300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ea360, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:28:58 server.go:3217: http: panic serving [::1]:58991: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0002884e0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002ae000}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002ae000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000286000?, {0x10059ad30?, 0xc0002ae000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002ae000}, 0xc000294000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288090?}, {0x10059ad30, 0xc0002ae000}, 0xc000294000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00028c000, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:29:00 server.go:3217: http: panic serving [::1]:58992: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000180a50})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc00018e2a0}, {0x0, 0x0}, {0xc000305a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc00018e2a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000286080?, {0x10059ad30?, 0xc00018e2a0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc00018e2a0}, 0xc000294100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288150?}, {0x10059ad30, 0xc00018e2a0}, 0xc000294100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00028c090, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:29:00 server.go:3217: http: panic serving [::1]:58993: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0002888a0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002ae1c0}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002ae1c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000202400?, {0x10059ad30?, 0xc0002ae1c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002ae1c0}, 0xc00022a200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204c60?}, {0x10059ad30, 0xc0002ae1c0}, 0xc00022a200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000208360, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:29:00 server.go:3217: http: panic serving [::1]:58994: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc0002050b0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000240540}, {0x0, 0x0}, {0xc000307a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000240540}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000202480?, {0x10059ad30?, 0xc000240540?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000240540}, 0xc00022a300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204d20?}, {0x10059ad30, 0xc000240540}, 0xc00022a300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002083f0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:29:05 server.go:3217: http: panic serving [::1]:58995: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000205440})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc000240700}, {0x0, 0x0}, {0xc000307a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc000240700}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e500?, {0x10059ad30?, 0xc000240700?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc000240700}, 0xc000186300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180b70?}, {0x10059ad30, 0xc000240700}, 0xc000186300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182510, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:29:35 server.go:3217: http: panic serving [::1]:58996: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000205830})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002408c0}, {0x0, 0x0}, {0xc000307a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002408c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e580?, {0x10059ad30?, 0xc0002408c0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002408c0}, 0xc000186400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180c30?}, {0x10059ad30, 0xc0002408c0}, 0xc000186400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001825a0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:29:35 server.go:3217: http: panic serving [::1]:58998: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000288c90})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002ae380}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002ae380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e600?, {0x10059ad30?, 0xc0002ae380?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002ae380}, 0xc000186500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180cf0?}, {0x10059ad30, 0xc0002ae380}, 0xc000186500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000182630, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:29:35 server.go:3217: http: panic serving [::1]:58999: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000289020})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0002ae540}, {0x0, 0x0}, {0xc0000c3a18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0002ae540}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00007e680?, {0x10059ad30?, 0xc0002ae540?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0002ae540}, 0xc000186600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180db0?}, {0x10059ad30, 0xc0002ae540}, 0xc000186600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001826c0, {0x10059af88, 0xc0000a3320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:30:09 server.go:3217: http: panic serving [::1]:59022: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000098390})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0000b6000}, {0x0, 0x0}, {0xc00011da18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0000b6000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc000128180?, {0x10059ad30?, 0xc0000b6000?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000b6000}, 0xc000130100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f410?}, {0x10059ad30, 0xc0000b6000}, 0xc000130100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000140090, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 02:31:09 server.go:3217: http: panic serving [::1]:59030: open app/views/templates/private_nabvar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004bdf00, 0xc000098780})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059ad30?, 0xc0000b62a0}, {0x0, 0x0}, {0xc00011da18?, 0x3, 0x800?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059ad30, 0xc0000b62a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:24 +0xdf
+net/http.HandlerFunc.ServeHTTP(0xc00018a000?, {0x10059ad30?, 0xc0000b62a0?}, 0x10000ee28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059ad30, 0xc0000b62a0}, 0xc000096100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000983f0?}, {0x10059ad30, 0xc0000b62a0}, 0xc000096100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000190000, {0x10059af88, 0xc00007f320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/21 16:28:25 route_main.go:15: sql: expected 4 destination arguments in Scan, not 5
+2023/05/25 23:35:04 route_main.go:33: sql: expected 4 destination arguments in Scan, not 5
+2023/05/25 23:37:09 server.go:3217: http: panic serving [::1]:52774: template: index.html:14: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc00011b460})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc000190000}, {0x0, 0x0}, {0xc000141898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc000190000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000146180?, {0x10059e9d0?, 0xc000190000?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc000190000}, 0xc000152100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00011d410?}, {0x10059e9d0, 0xc000190000}, 0xc000152100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000162090, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:10 server.go:3217: http: panic serving [::1]:52775: template: index.html:14: unexpected EOF
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000016370})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020c000}, {0x0, 0x0}, {0xc00013b898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020c000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc00007c000?, {0x10059e9d0?, 0xc00020c000?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020c000}, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007e090?}, {0x10059e9d0, 0xc00020c000}, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000200000, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:10 server.go:3217: http: panic serving [::1]:52776: template: index.html:14: unexpected EOF
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000166b0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020c1c0}, {0x0, 0x0}, {0xc00013b898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020c1c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000146680?, {0x10059e9d0?, 0xc00020c1c0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020c1c0}, 0xc000152300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c8000?}, {0x10059e9d0, 0xc00020c1c0}, 0xc000152300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000162240, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:10 server.go:3217: http: panic serving [::1]:52777: template: index.html:14: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc00011b7b0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0001902a0}, {0x0, 0x0}, {0xc000141898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0001902a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc00007c900?, {0x10059e9d0?, 0xc0001902a0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0001902a0}, 0xc000206300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f770?}, {0x10059e9d0, 0xc0001902a0}, 0xc000206300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002002d0, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:15 server.go:3217: http: panic serving [::1]:52778: template: index.html:14: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0002a2330})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0002bc000}, {0x0, 0x0}, {0xc0002c9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0002bc000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000282000?, {0x10059e9d0?, 0xc0002bc000?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0002bc000}, 0xc000152500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c8b10?}, {0x10059e9d0, 0xc0002bc000}, 0xc000152500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000288000, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:19 server.go:3217: http: panic serving [::1]:52779: template: index.html:14: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000016b70})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020c460}, {0x0, 0x0}, {0xc00013b898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020c460}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000282080?, {0x10059e9d0?, 0xc00020c460?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020c460}, 0xc000206400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002840f0?}, {0x10059e9d0, 0xc00020c460}, 0xc000206400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000288090, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:19 server.go:3217: http: panic serving [::1]:52780: template: index.html:14: unexpected EOF
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc00011bb00})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc000190460}, {0x0, 0x0}, {0xc000141898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc000190460}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0x100fa0288?, {0x10059e9d0?, 0xc000190460?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc000190460}, 0xc000206500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002525d0?}, {0x10059e9d0, 0xc000190460}, 0xc000206500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002005a0, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:19 server.go:3217: http: panic serving [::1]:52781: template: index.html:14: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0002a2800})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0002bc2a0}, {0x0, 0x0}, {0xc0002c9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0002bc2a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000282480?, {0x10059e9d0?, 0xc0002bc2a0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0002bc2a0}, 0xc0002a4400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000284c60?}, {0x10059e9d0, 0xc0002bc2a0}, 0xc0002a4400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000288240, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:19 server.go:3217: http: panic serving [::1]:52782: template: index.html:14: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0002a2b40})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0002bc460}, {0x0, 0x0}, {0xc0002c9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0002bc460}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000282700?, {0x10059e9d0?, 0xc0002bc460?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0002bc460}, 0xc0002a4300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000285020?}, {0x10059e9d0, 0xc0002bc460}, 0xc0002a4300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000288480, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:19 server.go:3217: http: panic serving [::1]:52783: template: index.html:14: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0002a2e80})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0002bc620}, {0x0, 0x0}, {0xc0002c9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0002bc620}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc00007cf80?, {0x10059e9d0?, 0xc0002bc620?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0002bc620}, 0xc000206600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000252690?}, {0x10059e9d0, 0xc0002bc620}, 0xc000206600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000200630, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:20 server.go:3217: http: panic serving [::1]:52784: template: index.html:14: unexpected EOF
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0002a31e0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0002bc7e0}, {0x0, 0x0}, {0xc0002c9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0002bc7e0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000283380?, {0x10059e9d0?, 0xc0002bc7e0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0002bc7e0}, 0xc0002a4500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003151a0?}, {0x10059e9d0, 0xc0002bc7e0}, 0xc0002a4500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002887e0, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:25 server.go:3217: http: panic serving [::1]:52785: template: index.html:14: unexpected EOF
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000016ed0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020c620}, {0x0, 0x0}, {0xc00013b898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020c620}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000283400?, {0x10059e9d0?, 0xc00020c620?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020c620}, 0xc0002a4600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000315260?}, {0x10059e9d0, 0xc00020c620}, 0xc0002a4600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000288870, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:25 server.go:3217: http: panic serving [::1]:52787: template: index.html:14: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0002a3520})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0002bc9a0}, {0x0, 0x0}, {0xc0002c9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0002bc9a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000146e00?, {0x10059e9d0?, 0xc0002bc9a0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0002bc9a0}, 0xc000152600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c9680?}, {0x10059e9d0, 0xc0002bc9a0}, 0xc000152600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000162510, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:25 server.go:3217: http: panic serving [::1]:52788: template: index.html:14: unexpected EOF
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000017220})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020c7e0}, {0x0, 0x0}, {0xc00013b898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020c7e0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc00007d380?, {0x10059e9d0?, 0xc00020c7e0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020c7e0}, 0xc000206800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000253200?}, {0x10059e9d0, 0xc00020c7e0}, 0xc000206800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0002007e0, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:28 server.go:3217: http: panic serving [::1]:52811: template: index.html:14: unexpected EOF
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000017560})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020c9a0}, {0x0, 0x0}, {0xc00013b898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020c9a0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000146e80?, {0x10059e9d0?, 0xc00020c9a0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020c9a0}, 0xc000152800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c9800?}, {0x10059e9d0, 0xc00020c9a0}, 0xc000152800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001625a0, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:58 server.go:3217: http: panic serving [::1]:52812: template: index.html:14: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0002a3860})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0002bcb60}, {0x0, 0x0}, {0xc0002c9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0002bcb60}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000146f00?, {0x10059e9d0?, 0xc0002bcb60?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0002bcb60}, 0xc000152700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c97a0?}, {0x10059e9d0, 0xc0002bcb60}, 0xc000152700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000162630, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:58 server.go:3217: http: panic serving [::1]:52828: template: index.html:14: unexpected EOF
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000178a0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020cb60}, {0x0, 0x0}, {0xc00013b898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020cb60}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000146f80?, {0x10059e9d0?, 0xc00020cb60?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020cb60}, 0xc000152900)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001c98f0?}, {0x10059e9d0, 0xc00020cb60}, 0xc000152900)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001626c0, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:37:58 server.go:3217: http: panic serving [::1]:52829: template: index.html:14: unexpected EOF
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc00011be80})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc000190620}, {0x0, 0x0}, {0xc000141898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc000190620}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000094000?, {0x10059e9d0?, 0xc000190620?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc000190620}, 0xc0000a2000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000096090?}, {0x10059e9d0, 0xc000190620}, 0xc0000a2000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00009a000, {0x10059ec28, 0xc00011d320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:04 server.go:3217: http: panic serving [::1]:52834: template: index.html:14: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000193470})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020a000}, {0x0, 0x0}, {0xc0001b9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020a000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0001be180?, {0x10059e9d0?, 0xc00020a000?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020a000}, 0xc0001ca200)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000195500?}, {0x10059e9d0, 0xc00020a000}, 0xc0001ca200)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001da090, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:05 server.go:3217: http: panic serving [::1]:52835: template: index.html:14: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000a8320})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0000ac000}, {0x0, 0x0}, {0xc0001b3898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0000ac000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0001be200?, {0x10059e9d0?, 0xc0000ac000?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0000ac000}, 0xc0001ca100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000195470?}, {0x10059e9d0, 0xc0000ac000}, 0xc0001ca100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001da120, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:05 server.go:3217: http: panic serving [::1]:52836: template: index.html:14: unexpected EOF
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000a8660})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0000ac1c0}, {0x0, 0x0}, {0xc0001b3898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0000ac1c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000104000?, {0x10059e9d0?, 0xc0000ac1c0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0000ac1c0}, 0xc00010e000)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000106090?}, {0x10059e9d0, 0xc0000ac1c0}, 0xc00010e000)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000108000, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:05 server.go:3217: http: panic serving [::1]:52837: template: index.html:14: unexpected EOF
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000a89a0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0000ac380}, {0x0, 0x0}, {0xc0001b3898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0000ac380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000104080?, {0x10059e9d0?, 0xc0000ac380?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0000ac380}, 0xc00010e100)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000106180?}, {0x10059e9d0, 0xc0000ac380}, 0xc00010e100)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000108090, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:05 server.go:3217: http: panic serving [::1]:52838: template: index.html:14: unexpected EOF
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000a8ce0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0000ac540}, {0x0, 0x0}, {0xc0001b3898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0000ac540}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0001be700?, {0x10059e9d0?, 0xc0000ac540?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0000ac540}, 0xc0001ca400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022e0f0?}, {0x10059e9d0, 0xc0000ac540}, 0xc0001ca400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001da2d0, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:18 server.go:3217: http: panic serving [::1]:52839: template: index.html:14: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000016390})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc000116000}, {0x0, 0x0}, {0xc0001b9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc000116000}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000104100?, {0x10059e9d0?, 0xc000116000?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc000116000}, 0xc00010e300)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000106240?}, {0x10059e9d0, 0xc000116000}, 0xc00010e300)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000108120, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:18 server.go:3217: http: panic serving [::1]:52842: template: index.html:14: unexpected EOF
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000166e0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0001161c0}, {0x0, 0x0}, {0xc0001b9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0001161c0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000104500?, {0x10059e9d0?, 0xc0001161c0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0001161c0}, 0xc00010e400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000106d80?}, {0x10059e9d0, 0xc0001161c0}, 0xc00010e400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000108240, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:18 server.go:3217: http: panic serving [::1]:52843: template: index.html:14: unexpected EOF
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000016bb0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc000116460}, {0x0, 0x0}, {0xc0001b9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc000116460}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000104900?, {0x10059e9d0?, 0xc000116460?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc000116460}, 0xc00010e700)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001078f0?}, {0x10059e9d0, 0xc000116460}, 0xc00010e700)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001083f0, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:18 server.go:3217: http: panic serving [::1]:52844: template: index.html:14: unexpected EOF
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000016ef0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc000116620}, {0x0, 0x0}, {0xc0001b9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc000116620}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000104b80?, {0x10059e9d0?, 0xc000116620?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc000116620}, 0xc00010e600)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000107cb0?}, {0x10059e9d0, 0xc000116620}, 0xc00010e600)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000108630, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:18 server.go:3217: http: panic serving [::1]:52845: template: index.html:14: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000017230})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0001167e0}, {0x0, 0x0}, {0xc0001b9898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0001167e0}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0000c4f80?, {0x10059e9d0?, 0xc0001167e0?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0001167e0}, 0xc000092400)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000280c00?}, {0x10059e9d0, 0xc0001167e0}, 0xc000092400)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000090480, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:19 server.go:3217: http: panic serving [::1]:52846: template: index.html:14: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000193940})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020a380}, {0x0, 0x0}, {0xc000251898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020a380}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0001be980?, {0x10059e9d0?, 0xc00020a380?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020a380}, 0xc0001ca500)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022e4b0?}, {0x10059e9d0, 0xc00020a380}, 0xc0001ca500)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001da510, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:24 server.go:3217: http: panic serving [::1]:52847: template: index.html:14: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc0000a9030})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc0000ac700}, {0x0, 0x0}, {0xc0001b3898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc0000ac700}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000105800?, {0x10059e9d0?, 0xc0000ac700?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc0000ac700}, 0xc00010e800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000163e30?}, {0x10059e9d0, 0xc0000ac700}, 0xc00010e800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000108990, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:24 server.go:3217: http: panic serving [::1]:52848: template: index.html:14: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000193c90})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020a540}, {0x0, 0x0}, {0xc000251898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020a540}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc0001bed80?, {0x10059e9d0?, 0xc00020a540?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020a540}, 0xc0001ca800)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc00022f020?}, {0x10059e9d0, 0xc00020a540}, 0xc0001ca800)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001da6c0, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/25 23:38:24 server.go:3217: http: panic serving [::1]:52849: template: index.html:14: unexpected EOF
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1854 +0xbf
+panic({0x1004ae900, 0xc000193fd0})
+	/usr/local/go/src/runtime/panic.go:890 +0x263
+text/template.Must(...)
+	/usr/local/go/src/text/template/helper.go:26
+go-todo-app/app/controllers.generateHTML({0x10059e9d0?, 0xc00020a700}, {0x0, 0x0}, {0xc000251898?, 0x3, 0xe?})
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/server.go:18 +0x237
+go-todo-app/app/controllers.index({0x10059e9d0, 0xc00020a700}, 0xffffffffffffffff?)
+	/Users/endoutaishi/go/src/go-todo-app/app/controllers/route_main.go:37 +0x2c7
+net/http.HandlerFunc.ServeHTTP(0xc000105880?, {0x10059e9d0?, 0xc00020a700?}, 0x100011e28?)
+	/usr/local/go/src/net/http/server.go:2122 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10059e9d0, 0xc00020a700}, 0xc00010e900)
+	/usr/local/go/src/net/http/server.go:2500 +0x149
+net/http.serverHandler.ServeHTTP({0xc000163ef0?}, {0x10059e9d0, 0xc00020a700}, 0xc00010e900)
+	/usr/local/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000108a20, {0x10059ec28, 0xc000195320})
+	/usr/local/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3089 +0x5ed
+2023/05/26 00:11:09 route_main.go:15: sql: no rows in result set
+2023/05/26 03:11:39 route_main.go:16: sql: no rows in result set
